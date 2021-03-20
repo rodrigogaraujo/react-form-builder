@@ -466,7 +466,7 @@ class Image extends React.Component {
           <img src={this.props.data.src} width={this.props.data.width} height={this.props.data.height} />
         }
         { !this.props.data.src &&
-          <div className="no-image">No Image</div>
+          <div className="no-image">Sem imagem</div>
         }
       </div>
     );
@@ -583,7 +583,6 @@ class Camera extends React.Component {
         sourceDataURL = `data:image/png;base64,${this.props.defaultValue}`;
       }
     }
-    console.log('sourceDataURL', sourceDataURL);
     return (
       <div className={baseClasses}>
         <ComponentHeader {...this.props} />
@@ -596,8 +595,8 @@ class Camera extends React.Component {
               <div style={fileInputStyle}>
                 <input name={name} type="file" accept="image/*" capture="camera" className="image-upload" onChange={this.displayImage} />
                 <div className="image-upload-control">
-                  <div className="btn btn-default"><i className="fas fa-camera"></i> Upload Photo</div>
-                  <p>Select an image from your computer or device.</p>
+                  <div className="btn btn-default"><i className="fas fa-camera"></i> Upload de imagem</div>
+                  <p>Selecione uma imagem do seu computador ou dispositivo.</p>
                 </div>
               </div>
 
@@ -605,7 +604,7 @@ class Camera extends React.Component {
                 <div>
                   <img src={this.state.img} height="100" className="image-upload-preview" /><br />
                   <div className="btn btn-image-clear" onClick={this.clearImage}>
-                    <i className="fas fa-times"></i> Clear Photo
+                    <i className="fas fa-times"></i> Excluir foto
                 </div>
                 </div>
               }

@@ -83,11 +83,11 @@ export default class DynamicOptionList extends React.Component {
         <ul>
           <li>
             <div className="row">
-              <div className="col-sm-6"><b>Options</b></div>
+              <div className="col-sm-6"><b>Opções</b></div>
               { this.props.canHaveOptionValue &&
-              <div className="col-sm-2"><b>Value</b></div> }
+              <div className="col-sm-2"><b>Valor</b></div> }
               { this.props.canHaveOptionValue && this.props.canHaveOptionCorrect &&
-              <div className="col-sm-4"><b>Correct</b></div> }
+              <div className="col-sm-4"><b>Correto</b></div> }
             </div>
           </li>
           {
